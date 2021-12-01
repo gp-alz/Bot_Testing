@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1181.6,2634.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="905.6,3772.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -86,19 +86,19 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="627.2,2569.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="747.2,3708" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: - Consulta de Procesos - eSATJE -" sap:VirtualizedContainerService.HintSize="705.6,3487.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="b8158dd5-0f3e-4afc-9ec1-e0ac7e5c0528" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: - Consulta de Procesos - eSATJE -" sap:VirtualizedContainerService.HintSize="705.6,3615.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="b8158dd5-0f3e-4afc-9ec1-e0ac7e5c0528" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="672,3270.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence sap:VirtualizedContainerService.HintSize="672,3398.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -111,7 +111,14 @@
                 </InArgument>
               </ui:MessageBox.Text>
             </ui:MessageBox>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="630.4,3050.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="630.4,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_4">
+              <ui:MessageBox.Text>
+                <InArgument x:TypeArguments="x:Object">
+                  <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">"test msg 2"</mca:CSharpValue>
+                </InArgument>
+              </ui:MessageBox.Text>
+            </ui:MessageBox>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="630.4,3052.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sc:IEnumerable" Name="iter_list">
                   <Variable.Default>
@@ -146,13 +153,13 @@
                   </uix:TargetAnchorable>
                 </uix:NClick.Target>
               </uix:NClick>
-              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each Iterate over processes" sap:VirtualizedContainerService.HintSize="588.8,2500" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
+              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each Iterate over processes" sap:VirtualizedContainerService.HintSize="588.8,2502.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="index" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="553.6,2373.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="553.6,2376" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -181,13 +188,13 @@
                           <uix:TargetAnchorable BrowserURL="http://consultas.funcionjudicial.gob.ec/informacionjudicial/public/informacion.jsf" DesignTimeRectangle="1786, 419, 44, 30" ElementType="Button" FriendlyName="'Ver Detalle'" FullSelectorArgument="&lt;webctrl id='formJuicioDialogo:dataTableMovimiento:0:*' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl id='formJuicioDialogo:dataTableMovimiento:0:*' tag='BUTTON' type='submit' /&gt;" Guid="277c65ff-6713-4e7f-85fc-b6350d15717e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAiCAYAAAAZHFoXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASHSURBVFhH7Zh7TFt1FMf9zwFOKAvOZC4ap3OaLCYzMSiLOPUPp4nQVmjLYAgO2AZsYyAYVnm4AntYEHSOKVRuX4NCC6VvHi2zU9yYMLqHxqlRtz9mjGxOl7mM8fXccrcgHdGs2Eeyk5zce9t7c76fnt/tPd97F8I87gAEO/4TwIU/rmDszC9oc5xGltyFJ3I7seatbrRYT3BnBC/mBJiamsK1yes4P3EZzrGfUa06gueKuxGV3IYFyUrEbzXgY7OHOzt4MSfA5PUp/HrxMuS6Y3h2qx4LBSScrybxjDcTigxoDcUOXL02iTPnLqDZ5EFSlQWP5egQK9Iggq/kxLMgLIAeClsIAriOn0XBh58hvsiIOLEKUYIbwjnxHEBiSTfqdSNwe85B4fgayv5v/jUZSoX9NAzu7/Dt2Qmuon/hA1BvGMeSdFoqJNKbM4XfTAYvlPag7MAQylsPI6G4F4mlJjxfNncmlk6fk7DdiORqOzrd33MV/QsfgCrtGCd8tuiZyeClMiPy5H14VWrCAoEakWyn6LoI2kYIGNxN+5FCdp8+p2SPb+R9aVrs1Z/kKvoXvgCa0VsInp3TAPmN/RBWW3EPCV6UyiDmdQaxKQziRCSchMaJ6Zg+Z7+fef1DWR1o6j3FVfQv/ALY8J4D/Eoz1pQYkLnLhrXlRohkNmxudGKhsA07FF9AUG3B0gzNP7oaMgDZexxIrjBDUGVCWbML62qsKPzAiZ2qYeqGEp+Yx5HbMIBlWQdDGOAdE4QE8Dbd0Om1NmwhAJn6Sy9Aq9WDvIZBAtCGKoCdOmCiZWRCyUdOSGQWFDQN4l3ldAcOmI4jR37rDjQaQ+Amvl2AB99gAcKxA+zTnP5yeSItajvGuYr+RcAAYlLVWLGhHS9LzcjYM4juz3/gKvoXAQJoxwOZHcjc3QdN/yk4R3/Cj+d/5yr6FwEDWJFnQEPXKC7+eZWrND8RsCW0PFePuoOjZI7CFODRnC7UaI9h4tJfXKX5iYACyDQjdwBmx20DsH4gK5wBWIOfXmtFEs1C4QfAV2HtDjMKGgcg2kkQFb1hAECjAGvs7yWXFb+tG7Xao6ijfJGWkrDajNL9TqQRwMxxusXiQW59sAG8Mww5K5EaKzd2gU9+trzFTQ+lr5DXeAiP5+qQXmeDtGUI62lbtG8Iu7RHvABt9pPYRObmkeygATA0eGmwNLMdq4t7aNZ3QWEZh7xjBEmVVizJaMf9GR1YV2elDrggllmx6f1BVLYNI1rIYF/POLL3DuDhoHSA/eVpcnyqUI+S5kPQ9Hmgsp/Aa2TiF0tYi8iaeBWiU1VYla9DYlEXntzYjme2dHmXFeuDk8itPV3YiTiJygtQownEg0w7hkgSv1iiRMZuByo+PQxpq5u8rh3Lc0hMmhZRN006g0ja54lUiBWrEZNCW1pqi8TsizAy9RItTaEq7xuLZW/qUMEcxW+XrnCV5id8AOoNHqze3oNt+92o0wwjv8mJV6QWWuudiCaBPBLII1G8FOV0svs+yZ1DWxaKzZWb9ZDr2Fnof+5AeAXwN949Bq0UtpO4AAAAAElFTkSuQmCC" InformativeScreenshot="e654e7d85bfe00e6e0ee1e56e9afadb5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='- Consulta de Procesos - eSATJE -' /&gt;" SearchSteps="FuzzySelector, Image" />
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="512,1240.8" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
+                      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="512,1241.6" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
                         <ui:ForEach.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="x:Object" Name="index_row" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,1114.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,1115.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:String" Name="row_text" />
                                 <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="row_info" />
