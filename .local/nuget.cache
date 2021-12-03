@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A1Ft1RhQFKzZDfVQCk/NfXVp/bq1RogpnAcPYwXeRK0/trA/fWP2CAAiHQxCCBbrm2C5zcNn+/zbU24fw960uA==",
+  "dgSpecHash": "n5FSJoLZoVkZ9C8xpz8Ib2kC8J3ScB0PKiaReclirv57+gilMBIz00TYVH/O0TohJNDAea5zQ62oZ6qHeZ3WqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Paul\\Documents\\UiPath\\DemoTesting\\.local\\",
   "expectedPackageFiles": [
@@ -91,6 +91,7 @@
     "C:\\Users\\Paul\\.nuget\\packages\\uipath.ocr.activities\\3.3.2\\uipath.ocr.activities.3.3.2.nupkg.sha512",
     "C:\\Users\\Paul\\.nuget\\packages\\uipath.ocr.contracts\\2.9.1\\uipath.ocr.contracts.2.9.1.nupkg.sha512",
     "C:\\Users\\Paul\\.nuget\\packages\\uipath.platform\\21.10.0\\uipath.platform.21.10.0.nupkg.sha512",
+    "C:\\Users\\Paul\\.nuget\\packages\\uipath.python.activities\\1.4.1\\uipath.python.activities.1.4.1.nupkg.sha512",
     "C:\\Users\\Paul\\.nuget\\packages\\uipath.system.activities\\21.10.2\\uipath.system.activities.21.10.2.nupkg.sha512",
     "C:\\Users\\Paul\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\uipath.telemetry.client.1.5.3.nupkg.sha512",
     "C:\\Users\\Paul\\.nuget\\packages\\uipath.uiautomation.activities\\21.10.3\\uipath.uiautomation.activities.21.10.3.nupkg.sha512",

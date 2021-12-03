@@ -178,6 +178,18 @@
         "C:\\Users\\Paul\\.nuget\\packages\\uipath.vision/3.1.4\\lib/net461/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\Paul\\.nuget\\packages\\uipath.uiautomation.activities\\21.10.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Python.Activities",
+        "Version": "1.4.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\Paul\\.nuget\\packages\\uipath.python.activities/1.4.1\\lib/net461/UiPath.Python.Activities.Design.dll",
+        "C:\\Users\\Paul\\.nuget\\packages\\uipath.python.activities/1.4.1\\lib/net461/UiPath.Python.Activities.dll",
+        "C:\\Users\\Paul\\.nuget\\packages\\uipath.python.activities/1.4.1\\lib/net461/UiPath.Python.dll"
+      ],
+      "Path": "C:\\Users\\Paul\\.nuget\\packages\\uipath.python.activities\\1.4.1"
     }
   ],
   "Conflicts": [],
@@ -1211,6 +1223,11 @@
         }
       ]
     },
+    "UiPath.Python.Activities": {
+      "Id": "UiPath.Python.Activities",
+      "Version": "1.4.1",
+      "Dependencies": []
+    },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
       "Version": "21.10.2",
@@ -2236,6 +2253,18 @@
         "C:\\Users\\Paul\\.nuget\\packages\\uipath.platform\\21.10.0\\lib\\net461\\UiPath.Platform.dll"
       ],
       "Path": "C:\\Users\\Paul\\.nuget\\packages\\uipath.platform\\21.10.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Python.Activities",
+        "Version": "1.4.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\Paul\\.nuget\\packages\\uipath.python.activities\\1.4.1\\lib\\net461\\UiPath.Python.Activities.Design.dll",
+        "C:\\Users\\Paul\\.nuget\\packages\\uipath.python.activities\\1.4.1\\lib\\net461\\UiPath.Python.Activities.dll",
+        "C:\\Users\\Paul\\.nuget\\packages\\uipath.python.activities\\1.4.1\\lib\\net461\\UiPath.Python.dll"
+      ],
+      "Path": "C:\\Users\\Paul\\.nuget\\packages\\uipath.python.activities\\1.4.1"
     },
     {
       "Package": {
