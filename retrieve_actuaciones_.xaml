@@ -1,13 +1,13 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="retrieve_actuaciones_" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="incremento" Type="OutArgument(x:Int32)" />
+    <x:Property Name="incremento" Type="InArgument(x:Int32)" />
     <x:Property Name="row_text" Type="OutArgument(x:String)" />
     <x:Property Name="row_info" Type="OutArgument(scg:IEnumerable(uuam:NWordInfo))" />
     <x:Property Name="index_row" Type="InArgument(x:Object)" />
     <x:Property Name="break_controller" Type="OutArgument(x:Boolean)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1040,1062.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1071.2,1155.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -81,28 +81,27 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Python</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="550.4,997.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="553.6,1090.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: - Consulta de Procesos - eSATJE -" sap:VirtualizedContainerService.HintSize="508.8,904.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8c5520bb-bdcc-4dab-b54a-1e01b90e661e" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: - Consulta de Procesos - eSATJE -" sap:VirtualizedContainerService.HintSize="512,997.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8c5520bb-bdcc-4dab-b54a-1e01b90e661e" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,688" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478.4,780.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign sap:VirtualizedContainerService.HintSize="436.8,61.6" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Boolean">
                   <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">break_controller</mca:CSharpReference>
@@ -112,7 +111,7 @@
                 <InArgument x:TypeArguments="x:Boolean">False</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="433.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="436.8,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Object">
                   <mca:CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">index_row</mca:CSharpReference>
@@ -124,40 +123,42 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,391.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,483.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <TryCatch.Try>
-                <uix:NGetText DisplayName="Get Text" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="8c5520bb-bdcc-4dab-b54a-1e01b90e661e" ScrapingMethod="Fulltext" Timeout="0.1" Version="V1">
-                  <uix:NGetText.Target>
-                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="82c69249-eae6-4949-a9b3-5106fb1dd038" ScopeSelectorArgument="&lt;html app='chrome.exe' title='- Consulta de Procesos - eSATJE -' /&gt;" SearchSteps="Selector, FuzzySelector" WaitForReadyArgument="None">
-                      <uix:TargetAnchorable.FullSelectorArgument>
-                        <InArgument x:TypeArguments="x:String">
-                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">"&lt;html app='chrome.exe' title='- Consulta de Procesos - eSATJE -' /&gt;&lt;webctrl data-ri='"+index_row+"' class='ui-widget-content ui-datatable-*' /&gt;"</mca:CSharpValue>
-                        </InArgument>
-                      </uix:TargetAnchorable.FullSelectorArgument>
-                      <uix:TargetAnchorable.FuzzySelectorArgument>
-                        <InArgument x:TypeArguments="x:String">
-                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">"&lt;html app='chrome.exe' title='- Consulta de Procesos - eSATJE -' /&gt;&lt;webctrl data-ri='"+index_row+"' class='ui-widget-content ui-datatable-*' /&gt;"</mca:CSharpValue>
-                        </InArgument>
-                      </uix:TargetAnchorable.FuzzySelectorArgument>
-                    </uix:TargetAnchorable>
-                  </uix:NGetText.Target>
-                  <uix:NGetText.Text>
-                    <OutArgument x:TypeArguments="x:String">
-                      <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">row_text</mca:CSharpReference>
-                    </OutArgument>
-                  </uix:NGetText.Text>
-                  <uix:NGetText.WordsInfo>
-                    <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
-                      <mca:CSharpReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">row_info</mca:CSharpReference>
-                    </OutArgument>
-                  </uix:NGetText.WordsInfo>
-                </uix:NGetText>
-              </TryCatch.Try>
-              <TryCatch.Catches>
-                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,226.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <Sequence sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get Text" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="8c5520bb-bdcc-4dab-b54a-1e01b90e661e" ScrapingMethod="Fulltext" Timeout="1" Version="V1">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="82c69249-eae6-4949-a9b3-5106fb1dd038" ScopeSelectorArgument="&lt;html app='chrome.exe' title='- Consulta de Procesos - eSATJE -' /&gt;" SearchSteps="Selector" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.FullSelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">"&lt;webctrl data-ri='"+index_row+"' parentid='formJuicioDetalle:dataTable_data' class='ui-widget-content ui-datatable*' tag='TR' aria-role='row' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr' parentclass='ui-datatable-data ui-widget-content' /&gt;"</mca:CSharpValue>
+                          </InArgument>
+                        </uix:TargetAnchorable.FullSelectorArgument>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.Text>
+                      <OutArgument x:TypeArguments="x:String">
+                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">row_text</mca:CSharpReference>
+                      </OutArgument>
+                    </uix:NGetText.Text>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <mca:CSharpReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">row_info</mca:CSharpReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </Sequence>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
