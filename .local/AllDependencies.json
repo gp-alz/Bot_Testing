@@ -7992,15 +7992,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Paul\\.nuget\\packages\\": {}
+    "C:\\Users\\boliv\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "GitTest",
       "projectName": "GitTest",
-      "projectPath": "C:\\Users\\Paul\\Documents\\UiPath\\DemoTesting\\.local",
-      "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paul\\Documents\\UiPath\\DemoTesting\\.local"
+      "projectPath": "C:\\Users\\boliv\\Documents\\UiPath\\test5\\.local",
+      "packagesPath": "C:\\Users\\boliv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\boliv\\Documents\\UiPath\\test5\\.local"
     },
     "frameworks": {
       "net461": {
@@ -8031,7 +8031,7 @@
             "version": "[21.10.3, 21.10.3]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Paul\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\boliv\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
